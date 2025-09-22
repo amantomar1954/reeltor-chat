@@ -4,7 +4,6 @@
 
 import { User, Message, Chat } from '@/types/chat';
 import { v4 as uuidv4 } from 'uuid';
-import { apiService } from './api';
 
 // TODO: REPLACE WITH API CALL - apiService.getCurrentUser()
 export const currentUser: User = {

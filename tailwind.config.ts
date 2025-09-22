@@ -7,6 +7,33 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    // Essential layout classes
+    'h-screen', 'w-full', 'flex', 'flex-col', 'flex-1', 'relative', 'absolute', 'overflow-hidden',
+    'items-center', 'justify-between', 'space-x-2', 'space-x-3', 'flex-shrink-0',
+    // Background colors and custom backgrounds
+    'bg-white', 'bg-gray-100', 'bg-gray-200', 'bg-gray-400', 'bg-green-50', 'bg-red-50', 'bg-yellow-50',
+    'bg-green-500', 'bg-red-500', 'bg-yellow-500', 'bg-[#ededed]', 'bg-green-100', 'bg-red-100',
+    // Text colors and custom text colors
+    'text-green-600', 'text-red-600', 'text-yellow-600', 'text-gray-600', 'text-gray-400',
+    'text-[#25D366]', 'text-lg', 'text-sm', 'text-xs', 'font-medium', 'leading-relaxed',
+    // Spacing
+    'p-2', 'p-3', 'p-4', 'px-2', 'px-3', 'py-1', 'py-2', 'm-2', 'gap-2', 'pr-12',
+    // Borders and shapes
+    'border-b', 'border-green-200', 'border-red-200', 'border-yellow-200', 'rounded-full',
+    // Animation
+    'animate-pulse',
+    // Sizing
+    'w-2', 'h-2', 'w-80', 'size-16', 'size-20',
+    // Position utilities
+    'z-50', 'shadow-lg',
+    // Hover states
+    'hover:bg-red-200', 'hover:bg-gray-200',
+    // Transitions
+    'transition-colors',
+    // Hide/show utilities
+    'hidden', 'block',
+  ],
   theme: {
     extend: {
       backgroundImage: {
